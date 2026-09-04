@@ -1,0 +1,27 @@
+name: Theme problem
+description: Report an unreadable or inconsistent color.
+title: "[Theme]: "
+labels:
+  - bug
+body:
+  - type: input
+    id: variant
+    attributes:
+      label: Theme Variant
+      placeholder: "Dark"
+    validations:
+      required: true
+  - type: input
+    id: vscode-version
+    attributes:
+      label: VS Code version
+      placeholder: "1.x.x"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What looks wrong?
+      description: Include the language, UI area, and a screenshot when possible.
+    validations:
+      required: true

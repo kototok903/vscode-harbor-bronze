@@ -1,0 +1,8 @@
+.github
+.vscode
+scripts
+.editorconfig
+.gitignore
+package-lock.json
+node_modules
+*.vsix

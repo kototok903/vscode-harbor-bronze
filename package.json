@@ -1,0 +1,46 @@
+{
+  "name": "vscode-harbor-bronze",
+  "displayName": "Harbor Bronze",
+  "description": "A cool harbor-inspired VS Code theme with restrained teal and warm bronze accents.",
+  "version": "1.0.0",
+  "publisher": "local",
+  "license": "MIT",
+  "galleryBanner": {
+    "color": "#10191e",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "light theme",
+    "teal",
+    "bronze"
+  ],
+  "scripts": {
+    "check": "node scripts/check-themes.mjs",
+    "package": "npm run check && vsce package --allow-missing-repository"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Harbor Bronze Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/harbor-bronze-dark.json"
+      },
+      {
+        "label": "Harbor Bronze Light",
+        "uiTheme": "vs",
+        "path": "./themes/harbor-bronze-light.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.9.2"
+  }
+}
