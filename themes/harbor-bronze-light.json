@@ -168,6 +168,8 @@
     "panelTitle.activeForeground": "#293336",
     "panelTitle.activeBorder": "#47798a",
     "panelTitle.inactiveForeground": "#687579",
+    "debugToolBar.background": "#f8faf9",
+    "debugToolBar.border": "#c5cecd",
     "statusBar.background": "#e2e8e7",
     "statusBar.foreground": "#283235",
     "statusBar.border": "#c5cecd",
@@ -176,7 +178,7 @@
     "statusBarItem.hoverBackground": "#e3e9e8",
     "statusBarItem.remoteBackground": "#365f6e",
     "statusBarItem.remoteForeground": "#ffffff",
-    "terminal.background": "#f3f6f5",
+    "terminal.background": "#e2e8e7",
     "terminal.foreground": "#283235",
     "terminalCursor.foreground": "#47798a",
     "terminal.selectionBackground": "#c9dcdf",
@@ -239,14 +241,18 @@
       "settings": { "foreground": "#283235" }
     },
     {
-      "name": "Numbers and constants",
+      "name": "Numbers and literals",
       "scope": [
         "constant.numeric",
         "constant.language",
-        "constant.character",
-        "variable.language"
+        "constant.character"
       ],
       "settings": { "foreground": "#a13f3a" }
+    },
+    {
+      "name": "Language variables",
+      "scope": ["variable.language"],
+      "settings": { "foreground": "#365f6e" }
     },
     {
       "name": "Keywords and storage",
@@ -370,7 +376,8 @@
     "enumMember": "#a13f3a",
     "property": "#805f43",
     "parameter": "#283235",
-    "variable.readonly": "#a13f3a",
+    "variable": "#283235",
+    "variable.readonly": "#283235",
     "decorator": "#825324",
     "namespace": "#51736f",
     "regexp": "#3f7d63"

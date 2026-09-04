@@ -2,7 +2,9 @@ import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
-const manifest = JSON.parse(await readFile(resolve(root, "package.json"), "utf8"));
+const manifest = JSON.parse(
+  await readFile(resolve(root, "package.json"), "utf8"),
+);
 const hexColor = /^#[0-9a-f]{6}(?:[0-9a-f]{2})?$/i;
 
 if (manifest.contributes?.themes?.length !== 2) {
@@ -20,7 +22,9 @@ for (const contribution of manifest.contributes.themes) {
 
   for (const [role, color] of Object.entries(theme.colors ?? {})) {
     if (!hexColor.test(color)) {
-      throw new Error(`${contribution.label}: ${role} has invalid color ${color}.`);
+      throw new Error(
+        `${contribution.label}: ${role} has invalid color ${color}.`,
+      );
     }
   }
 
