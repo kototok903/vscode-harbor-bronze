@@ -4,6 +4,7 @@
   "description": "A cool harbor-inspired VS Code theme with restrained teal and warm bronze accents.",
   "version": "1.0.0",
   "publisher": "local",
+  "icon": "assets/icon.png",
   "license": "MIT",
   "galleryBanner": {
     "color": "#10191e",
