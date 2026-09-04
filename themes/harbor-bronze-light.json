@@ -229,7 +229,10 @@
     },
     {
       "name": "JSON property names",
-      "scope": ["support.type.property-name.json", "support.type.property-name.json.comments"],
+      "scope": [
+        "support.type.property-name.json",
+        "support.type.property-name.json.comments"
+      ],
       "settings": { "foreground": "#365f6e" }
     },
     {
@@ -242,11 +245,7 @@
     },
     {
       "name": "Numbers and literals",
-      "scope": [
-        "constant.numeric",
-        "constant.language",
-        "constant.character"
-      ],
+      "scope": ["constant.numeric", "constant.language", "constant.character"],
       "settings": { "foreground": "#a13f3a" }
     },
     {
