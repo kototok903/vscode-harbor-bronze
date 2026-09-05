@@ -177,6 +177,8 @@
     "statusBar.debuggingBackground": "#73563c",
     "statusBar.debuggingForeground": "#f1ece6",
     "statusBarItem.hoverBackground": "#1c282e",
+    "statusBarItem.prominentBackground": "#1c282e",
+    "statusBarItem.prominentHoverBackground": "#29383f",
     "statusBarItem.remoteBackground": "#365f6e",
     "statusBarItem.remoteForeground": "#f1f5f4",
     "terminal.background": "#071117",
