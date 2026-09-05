@@ -37,4 +37,12 @@ After changing `icon.svg`, run to regenerate the `icon.png` from it:
 npm run icon
 ```
 
+## Change log
+
+See [CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+Please see [LICENSE](./LICENSE)
+
 ### Enjoy!
