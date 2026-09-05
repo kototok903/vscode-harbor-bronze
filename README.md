@@ -10,7 +10,14 @@ The theme comes in two variants: **Dark** and **Light**.
 
 <img src="assets/screenshot-light.png" width=750>
 
-## Install locally
+## Install
+
+### From Marketplace
+
+- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=kototok903.vscode-harbor-bronze)
+- [Open VSX](https://open-vsx.org/extension/kototok903/vscode-harbor-bronze)
+
+### Local
 
 Build the extension and install the generated VSIX:
 
