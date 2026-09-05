@@ -1,7 +1,7 @@
 {
   "name": "vscode-harbor-bronze",
   "displayName": "Harbor Bronze",
-  "description": "A cool harbor-inspired VS Code theme with restrained teal and warm bronze accents.",
+  "description": "A calm theme with teal and bronze accents, available in dark and light variants.",
   "version": "1.0.0",
   "publisher": "kototok903",
   "icon": "assets/icon.png",
