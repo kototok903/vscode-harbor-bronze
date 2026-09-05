@@ -6,5 +6,6 @@ scripts
 package-lock.json
 node_modules
 *.vsix
+.env
 tmp/
 temp/
