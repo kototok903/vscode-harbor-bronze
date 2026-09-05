@@ -6,9 +6,17 @@ The theme comes in four variants: **Dark**, **Light**, **Dark Borderless**, and 
 
 ## Screenshots
 
+### Regular
+
 <img src="assets/screenshot-dark.png" width=750>
 
 <img src="assets/screenshot-light.png" width=750>
+
+### Borderless
+
+<img src="assets/screenshot-dark-borderless.png" width=750>
+
+<img src="assets/screenshot-light-borderless.png" width=750>
 
 ## Install
 
