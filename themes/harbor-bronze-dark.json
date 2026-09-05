@@ -246,7 +246,7 @@
     {
       "name": "Numbers and literals",
       "scope": ["constant.numeric", "constant.language", "constant.character"],
-      "settings": { "foreground": "#d48e80" }
+      "settings": { "foreground": "#c2b18f" }
     },
     {
       "name": "Language variables",
@@ -256,12 +256,17 @@
     {
       "name": "Keywords and storage",
       "scope": ["keyword", "storage.type", "storage.modifier"],
-      "settings": { "foreground": "#74aabd" }
+      "settings": { "foreground": "#d48e80" }
     },
     {
       "name": "Operators",
       "scope": ["keyword.operator", "punctuation.accessor"],
       "settings": { "foreground": "#aab3b1" }
+    },
+    {
+      "name": "New operator",
+      "scope": ["keyword.operator.new", "keyword.operator.expression.new"],
+      "settings": { "foreground": "#d48e80" }
     },
     {
       "name": "Functions and methods",
@@ -274,12 +279,26 @@
       "settings": { "foreground": "#d2a371" }
     },
     {
-      "name": "Types and classes",
+      "name": "Types and structs",
       "scope": [
         "entity.name.type",
+        "entity.name.struct"
+      ],
+      "settings": { "foreground": "#74aabd" }
+    },
+    {
+      "name": "Classes and interfaces",
+      "scope": [
         "entity.name.class",
-        "entity.name.struct",
         "entity.name.interface",
+        "entity.name.type.class",
+        "entity.name.type.interface"
+      ],
+      "settings": { "foreground": "#91b1b4" }
+    },
+    {
+      "name": "Library and support types",
+      "scope": [
         "support.type",
         "support.class"
       ],
@@ -292,16 +311,20 @@
         "support.variable.property",
         "entity.other.attribute-name"
       ],
-      "settings": { "foreground": "#b9a276" }
+      "settings": { "foreground": "#ced1ce" }
     },
     {
-      "name": "Parameters and variables",
+      "name": "Variables",
       "scope": [
         "variable",
-        "variable.parameter",
         "meta.definition.variable.name"
       ],
       "settings": { "foreground": "#ced1ce" }
+    },
+    {
+      "name": "Parameters",
+      "scope": ["variable.parameter"],
+      "settings": { "foreground": "#c2b18f" }
     },
     {
       "name": "Tags",
@@ -361,22 +384,27 @@
   "semanticTokenColors": {
     "comment": { "foreground": "#737e83", "italic": true },
     "string": "#a9c989",
-    "number": "#d48e80",
-    "keyword": "#74aabd",
+    "number": "#c2b18f",
+    "keyword": "#d48e80",
     "operator": "#aab3b1",
     "function": "#d2a371",
     "method": "#d2a371",
-    "class": "#abc2ba",
-    "interface": "#abc2ba",
-    "struct": "#abc2ba",
-    "type": "#abc2ba",
-    "typeParameter": "#abc2ba",
-    "enum": "#abc2ba",
-    "enumMember": "#d48e80",
-    "property": "#b9a276",
-    "parameter": "#ced1ce",
+    "class": "#91b1b4",
+    "class.defaultLibrary": "#91b1b4",
+    "interface": "#91b1b4",
+    "interface.defaultLibrary": "#91b1b4",
+    "struct": "#74aabd",
+    "struct.defaultLibrary": "#abc2ba",
+    "type": "#74aabd",
+    "type.defaultLibrary": "#abc2ba",
+    "typeParameter": "#74aabd",
+    "enum": "#74aabd",
+    "enum.defaultLibrary": "#abc2ba",
+    "enumMember": "#c2b18f",
+    "property": "#ced1ce",
+    "parameter": "#c2b18f",
     "variable": "#ced1ce",
-    "variable.readonly": "#d48e80",
+    "variable.readonly": "#ced1ce",
     "decorator": "#d2a371",
     "namespace": "#9eb7ad",
     "regexp": "#89bda6"
