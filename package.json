@@ -48,6 +48,16 @@
         "label": "Harbor Bronze Light",
         "uiTheme": "vs",
         "path": "./themes/harbor-bronze-light.json"
+      },
+      {
+        "label": "Harbor Bronze Dark Borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/harbor-bronze-dark-borderless.json"
+      },
+      {
+        "label": "Harbor Bronze Light Borderless",
+        "uiTheme": "vs",
+        "path": "./themes/harbor-bronze-light-borderless.json"
       }
     ]
   },

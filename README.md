@@ -2,7 +2,7 @@
 
 A cool, desaturated harbor palette with teal structure and warm bronze accents.
 
-The theme comes in two variants: **Dark** and **Light**.
+The theme comes in four variants: **Dark**, **Light**, **Dark Borderless**, and **Light Borderless**.
 
 ## Screenshots
 
@@ -26,7 +26,7 @@ npm install
 npm run package
 ```
 
-In VS Code, open the Extensions view, choose **Install from VSIX…**, and select the generated file. Then run **Preferences: Color Theme** and choose either Harbor Bronze variant.
+In VS Code, open the Extensions view, choose **Install from VSIX…**, and select the generated file. Then run **Preferences: Color Theme** and choose a Harbor Bronze variant.
 
 ## Development
 

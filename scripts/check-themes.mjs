@@ -1,5 +1,5 @@
 import { readFile } from "node:fs/promises";
-import { resolve } from "node:path";
+import { dirname, resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
 const manifest = JSON.parse(
@@ -7,13 +7,36 @@ const manifest = JSON.parse(
 );
 const hexColor = /^#[0-9a-f]{6}(?:[0-9a-f]{2})?$/i;
 
-if (manifest.contributes?.themes?.length !== 2) {
-  throw new Error("Expected exactly two contributed themes.");
+if (manifest.contributes?.themes?.length !== 4) {
+  throw new Error("Expected exactly four contributed themes.");
+}
+
+async function loadTheme(path, ancestors = []) {
+  if (ancestors.includes(path)) {
+    throw new Error(`Circular theme include: ${path}.`);
+  }
+  const theme = JSON.parse(await readFile(path, "utf8"));
+  if (!theme.include) return theme;
+
+  const base = await loadTheme(resolve(dirname(path), theme.include), [
+    ...ancestors,
+    path,
+  ]);
+  return {
+    ...base,
+    ...theme,
+    colors: { ...base.colors, ...theme.colors },
+    tokenColors: [...(base.tokenColors ?? []), ...(theme.tokenColors ?? [])],
+    semanticTokenColors: {
+      ...base.semanticTokenColors,
+      ...theme.semanticTokenColors,
+    },
+  };
 }
 
 for (const contribution of manifest.contributes.themes) {
   const path = resolve(root, contribution.path);
-  const theme = JSON.parse(await readFile(path, "utf8"));
+  const theme = await loadTheme(path);
   const expectedType = contribution.uiTheme === "vs-dark" ? "dark" : "light";
 
   if (theme.type !== expectedType) {
@@ -37,4 +60,4 @@ for (const contribution of manifest.contributes.themes) {
   }
 }
 
-console.log("Validated Harbor Bronze Dark and Light.");
+console.log("Validated all Harbor Bronze themes.");
