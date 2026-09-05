@@ -271,7 +271,7 @@
         "meta.function-call",
         "variable.function"
       ],
-      "settings": { "foreground": "#91b1b4" }
+      "settings": { "foreground": "#d2a371" }
     },
     {
       "name": "Types and classes",
@@ -364,8 +364,8 @@
     "number": "#d48e80",
     "keyword": "#74aabd",
     "operator": "#aab3b1",
-    "function": "#91b1b4",
-    "method": "#91b1b4",
+    "function": "#d2a371",
+    "method": "#d2a371",
     "class": "#abc2ba",
     "interface": "#abc2ba",
     "struct": "#abc2ba",
@@ -376,7 +376,7 @@
     "property": "#b9a276",
     "parameter": "#ced1ce",
     "variable": "#ced1ce",
-    "variable.readonly": "#ced1ce",
+    "variable.readonly": "#d48e80",
     "decorator": "#d2a371",
     "namespace": "#9eb7ad",
     "regexp": "#89bda6"
