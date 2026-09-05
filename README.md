@@ -2,10 +2,13 @@
 
 A cool, desaturated harbor palette with teal structure and warm bronze accents.
 
-## Themes
+The theme comes in two variants: **Dark** and **Light**.
 
-- Harbor Bronze Dark
-- Harbor Bronze Light
+## Screenshots
+
+<img src="assets/screenshot-dark.png" width=750>
+
+<img src="assets/screenshot-light.png" width=750>
 
 ## Install locally
 
@@ -28,11 +31,10 @@ Validate the manifest and theme colors with:
 npm run check
 ```
 
-## Publishing checklist
+After changing `icon.svg`, run to regenerate the `icon.png` from it:
 
-Before publishing to the VS Code Marketplace:
+```sh
+npm run icon
+```
 
-1. Create a Marketplace publisher and replace `local` in `package.json` with its ID.
-2. Add the GitHub `repository`, `homepage`, and `bugs` URLs to `package.json`.
-3. Add/Update preview screenshots to README.
-4. Run `npm run package` and test the resulting VSIX.
+### Enjoy!

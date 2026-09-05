@@ -3,9 +3,17 @@
   "displayName": "Harbor Bronze",
   "description": "A cool harbor-inspired VS Code theme with restrained teal and warm bronze accents.",
   "version": "1.0.0",
-  "publisher": "local",
+  "publisher": "kototok903",
   "icon": "assets/icon.png",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kototok903/vscode-harbor-bronze"
+  },
+  "bugs": {
+    "url": "https://github.com/kototok903/vscode-harbor-bronze/issues",
+    "email": "kototok903@gmail.com"
+  },
   "galleryBanner": {
     "color": "#10191e",
     "theme": "dark"
@@ -23,8 +31,10 @@
     "teal",
     "bronze"
   ],
+  "homepage": "https://github.com/kototok903/vscode-harbor-bronze",
   "scripts": {
     "check": "node scripts/check-themes.mjs",
+    "icon": "node scripts/render-icon.mjs",
     "package": "npm run check && vsce package --allow-missing-repository"
   },
   "contributes": {
@@ -42,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@vscode/vsce": "^3.9.2"
   }
 }
