@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1
+
+`2026-09-05`
+
+- Update screenshots.
+- Fix status-bar highlights colors.
+
 ## 1.1.0
 
 `2026-09-05`
