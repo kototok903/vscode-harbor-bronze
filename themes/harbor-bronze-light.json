@@ -264,19 +264,42 @@
       "settings": { "foreground": "#536164" }
     },
     {
-      "name": "New operator",
-      "scope": ["keyword.operator.new", "keyword.operator.expression.new"],
+      "name": "Word operators",
+      "scope": [
+        "keyword.operator.new",
+        "keyword.operator.expression.new",
+        "keyword.operator.instanceof",
+        "keyword.operator.expression.instanceof",
+        "keyword.operator.keyof",
+        "keyword.operator.expression.keyof",
+        "keyword.operator.delete",
+        "keyword.operator.expression.delete",
+        "keyword.operator.in",
+        "keyword.operator.expression.in",
+        "keyword.operator.of",
+        "keyword.operator.expression.of",
+        "keyword.operator.typeof",
+        "keyword.operator.expression.typeof",
+        "keyword.operator.void",
+        "keyword.operator.expression.void",
+        "keyword.operator.sizeof",
+        "keyword.operator.logical.python"
+      ],
       "settings": { "foreground": "#a13f3a" }
     },
     {
       "name": "Functions and methods",
       "scope": [
-        "entity.name.function",
         "support.function",
         "meta.function-call",
         "variable.function"
       ],
       "settings": { "foreground": "#825324" }
+    },
+    {
+      "name": "Function and method declarations",
+      "scope": ["entity.name.function"],
+      "settings": { "foreground": "#825324", "fontStyle": "bold" }
     },
     {
       "name": "Types and structs",
@@ -311,7 +334,7 @@
         "support.variable.property",
         "entity.other.attribute-name"
       ],
-      "settings": { "foreground": "#283235" }
+      "settings": { "foreground": "#796851" }
     },
     {
       "name": "Variables",
@@ -324,7 +347,7 @@
     {
       "name": "Parameters",
       "scope": ["variable.parameter"],
-      "settings": { "foreground": "#796851" }
+      "settings": { "foreground": "#283235", "fontStyle": "italic" }
     },
     {
       "name": "Tags",
@@ -389,6 +412,8 @@
     "operator": "#536164",
     "function": "#825324",
     "method": "#825324",
+    "function.declaration": { "foreground": "#825324", "bold": true },
+    "method.declaration": { "foreground": "#825324", "bold": true },
     "class": "#47798a",
     "class.defaultLibrary": "#47798a",
     "interface": "#47798a",
@@ -401,8 +426,8 @@
     "enum": "#365f6e",
     "enum.defaultLibrary": "#416b61",
     "enumMember": "#796851",
-    "property": "#283235",
-    "parameter": "#796851",
+    "property": "#796851",
+    "parameter": { "foreground": "#283235", "italic": true },
     "variable": "#283235",
     "variable.readonly": "#283235",
     "decorator": "#825324",
