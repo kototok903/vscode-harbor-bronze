@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.2.0
+
+`2026-09-06`
+
+- Unify named type colors, match primitive types color to keywords.
+- Update Markdown colors.
+- Add missing search highlights, editor links, informational validation, and no-folder status bars colors.
+- Update borderless focus accents.
+- Fix function color and boldness.
+- Fix modified and invalid-syntax colors in Dark.
+- Fix terminal cursor color in Dark.
+- Fix status-bar hover color in Light.
+- Add `examples/theme-preview` for development.
+
 ## 1.1.1
 
 `2026-09-05`

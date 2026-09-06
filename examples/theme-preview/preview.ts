@@ -8,7 +8,10 @@ export interface Berth {
 export type Status = "open" | "closed";
 export type Keys<T> = keyof T;
 export type Manifest = Record<string, readonly Berth[]>;
-export enum Signal { Stop = 0, Proceed = 1 }
+export enum Signal {
+  Stop = 0,
+  Proceed = 1,
+}
 
 const LIMIT = 12;
 const mask = 0xff & 0b1010;
@@ -32,7 +35,9 @@ export class Harbor implements Iterable<Berth> {
     return this;
   }
 
-  get count(): number { return this.#berths.length; }
+  get count(): number {
+    return this.#berths.length;
+  }
 
   *[Symbol.iterator](): Iterator<Berth> {
     yield* this.#berths;
