@@ -193,7 +193,7 @@
     "statusBar.noFolderBorder": "#c5cecd",
     "statusBar.debuggingBackground": "#886546",
     "statusBar.debuggingForeground": "#ffffff",
-    "statusBarItem.hoverBackground": "#e3e9e8",
+    "statusBarItem.hoverBackground": "#cdd7d6",
     "statusBarItem.prominentBackground": "#d1d9d8",
     "statusBarItem.prominentHoverBackground": "#c4cfce",
     "statusBarItem.remoteBackground": "#365f6e",
@@ -393,26 +393,32 @@
     {
       "name": "Markdown headings",
       "scope": ["markup.heading", "entity.name.section.markdown"],
-      "settings": { "foreground": "#365f6e", "fontStyle": "bold" }
+      "settings": {"foreground": "#796851", "fontStyle": "bold"}
     },
     {
-      "name": "Markdown links",
-      "scope": [
-        "markup.underline.link",
-        "string.other.link",
-        "meta.link.inline.markdown"
-      ],
-      "settings": { "foreground": "#47798a", "fontStyle": "underline" }
+      "name": "Markdown link destinations",
+      "scope": ["markup.underline.link"],
+      "settings": {"foreground": "#365f6e", "fontStyle": "underline"}
+    },
+    {
+      "name": "Markdown link text",
+      "scope": ["string.other.link"],
+      "settings": {"foreground": "#365f6e", "fontStyle": ""}
     },
     {
       "name": "Markup bold",
       "scope": ["markup.bold"],
-      "settings": { "foreground": "#825324", "fontStyle": "bold" }
+      "settings": {"foreground": "#416b61", "fontStyle": "bold"}
     },
     {
       "name": "Markup italic",
       "scope": ["markup.italic"],
-      "settings": { "foreground": "#416b61", "fontStyle": "italic" }
+      "settings": {"foreground": "#416b61", "fontStyle": "italic"}
+    },
+    {
+      "name": "Markup bold and italic",
+      "scope": ["markup.bold markup.italic", "markup.italic markup.bold"],
+      "settings": {"foreground": "#416b61", "fontStyle": "bold italic"}
     },
     {
       "name": "Diff inserted",
