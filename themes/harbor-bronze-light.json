@@ -308,24 +308,38 @@
       "settings": { "foreground": "#825324", "fontStyle": "bold" }
     },
     {
-      "name": "Types and structs",
-      "scope": ["entity.name.type", "entity.name.struct"],
-      "settings": { "foreground": "#365f6e" }
-    },
-    {
-      "name": "Classes and interfaces",
+      "name": "Types, classes, interfaces, and enums",
       "scope": [
+        "entity.name.type",
+        "entity.name.struct",
         "entity.name.class",
         "entity.name.interface",
-        "entity.name.type.class",
-        "entity.name.type.interface"
+        "entity.name.enum",
+        "entity.other.inherited-class"
       ],
-      "settings": { "foreground": "#47798a" }
+      "settings": { "foreground": "#365f6e" }
     },
     {
       "name": "Library and support types",
       "scope": ["support.type", "support.class"],
-      "settings": { "foreground": "#416b61" }
+      "settings": { "foreground": "#365f6e" }
+    },
+    {
+      "name": "Primitive types",
+      "scope": [
+        "support.type.primitive",
+        "storage.type.primitive",
+        "storage.type.boolean.go",
+        "storage.type.byte.go",
+        "storage.type.error.go",
+        "storage.type.numeric.go",
+        "storage.type.rune.go",
+        "storage.type.string.go",
+        "storage.type.uintptr.go",
+        "entity.name.type.any.go",
+        "entity.name.type.comparable.go"
+      ],
+      "settings": { "foreground": "#a13f3a" }
     },
     {
       "name": "Properties and attributes",
@@ -411,17 +425,18 @@
     "method": "#825324",
     "function.declaration": { "foreground": "#825324", "bold": true },
     "method.declaration": { "foreground": "#825324", "bold": true },
-    "class": "#47798a",
-    "class.defaultLibrary": "#47798a",
-    "interface": "#47798a",
-    "interface.defaultLibrary": "#47798a",
+    "class": "#365f6e",
+    "class.defaultLibrary": "#365f6e",
+    "interface": "#365f6e",
+    "interface.defaultLibrary": "#365f6e",
     "struct": "#365f6e",
-    "struct.defaultLibrary": "#416b61",
+    "struct.defaultLibrary": "#365f6e",
     "type": "#365f6e",
-    "type.defaultLibrary": "#416b61",
+    "type.defaultLibrary": "#365f6e",
+    "type.defaultLibrary:go": "#a13f3a",
     "typeParameter": "#365f6e",
     "enum": "#365f6e",
-    "enum.defaultLibrary": "#416b61",
+    "enum.defaultLibrary": "#365f6e",
     "enumMember": "#796851",
     "property": "#796851",
     "parameter": { "foreground": "#283235", "italic": true },
