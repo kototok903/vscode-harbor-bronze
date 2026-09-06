@@ -119,7 +119,9 @@
     "editorBracketPairGuide.activeBackground6": "#b98bc5",
     "editorGutter.background": "#0f181c",
     "editorGutter.addedBackground": "#70b598",
-    "editorGutter.modifiedBackground": "#5b91a2",
+    "editorGutter.modifiedBackground": "#74aabd",
+    "editorOverviewRuler.modifiedForeground": "#74aabd",
+    "minimapGutter.modifiedBackground": "#74aabd",
     "editorGutter.deletedBackground": "#d85e65",
     "editorError.foreground": "#e8757b",
     "editorWarning.foreground": "#d2a371",
@@ -294,22 +296,20 @@
       "name": "Functions and methods",
       "scope": [
         "support.function",
-        "meta.function-call",
+        "entity.name.function",
+        "meta.function-call.generic.python",
         "variable.function"
       ],
       "settings": { "foreground": "#d2a371" }
     },
     {
-      "name": "Function and method declarations",
-      "scope": ["entity.name.function"],
+      "name": "Python function and method declarations",
+      "scope": ["meta.function.python entity.name.function.python"],
       "settings": { "foreground": "#d2a371", "fontStyle": "bold" }
     },
     {
       "name": "Types and structs",
-      "scope": [
-        "entity.name.type",
-        "entity.name.struct"
-      ],
+      "scope": ["entity.name.type", "entity.name.struct"],
       "settings": { "foreground": "#74aabd" }
     },
     {
@@ -324,10 +324,7 @@
     },
     {
       "name": "Library and support types",
-      "scope": [
-        "support.type",
-        "support.class"
-      ],
+      "scope": ["support.type", "support.class"],
       "settings": { "foreground": "#abc2ba" }
     },
     {
@@ -341,10 +338,7 @@
     },
     {
       "name": "Variables",
-      "scope": [
-        "variable",
-        "meta.definition.variable.name"
-      ],
+      "scope": ["variable", "meta.definition.variable.name"],
       "settings": { "foreground": "#ced1ce" }
     },
     {
@@ -365,7 +359,7 @@
     {
       "name": "Invalid",
       "scope": ["invalid", "invalid.illegal"],
-      "settings": { "foreground": "#f1ece6" }
+      "settings": { "foreground": "#e8757b" }
     },
     {
       "name": "Markdown headings",
@@ -404,7 +398,7 @@
     {
       "name": "Diff changed",
       "scope": ["markup.changed"],
-      "settings": { "foreground": "#d2a371" }
+      "settings": { "foreground": "#74aabd" }
     }
   ],
   "semanticTokenColors": {
