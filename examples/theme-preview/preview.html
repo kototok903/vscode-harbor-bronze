@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Harbor &amp; Bronze</title>
+    <link rel="stylesheet" href="preview.css" />
+  </head>
+  <body>
+    <!-- Tags, attributes, entities, and embedded languages. -->
+    <main id="harbor" class="card" data-status="open">
+      <h1>Harbor &mdash; <em>Bronze</em></h1>
+      <a href="https://example.com/harbor#north">North berth</a>
+      <label for="depth">Depth <abbr title="meters">m</abbr></label>
+      <input id="depth" type="number" value="3.5" required />
+      <button type="button" disabled>Closed</button>
+      <template id="arrival"><span class="arrival">New arrival</span></template>
+      <svg viewBox="0 0 20 20" aria-label="Marker">
+        <circle cx="10" cy="10" r="5" fill="currentColor" />
+      </svg>
+    </main>
+    <style>
+      .arrival::before { content: "\2693"; color: #5b91a2; }
+    </style>
+    <script>
+      const berth = { name: "North", depth: 3.5 };
+      document.querySelector("h1").textContent = `${berth.name}: ${berth.depth}m`;
+    </script>
+  </body>
+</html>

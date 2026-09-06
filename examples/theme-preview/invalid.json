@@ -1,0 +1,6 @@
+{
+  "purpose": "Intentionally invalid JSON: inspect the error-colored tokens below",
+  "invalidEscape": "\q",
+  "invalidValue": undefined,
+  unquotedKey: true
+}

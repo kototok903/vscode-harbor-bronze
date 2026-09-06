@@ -40,6 +40,8 @@ In VS Code, open the Extensions view, choose **Install from VSIX…**, and selec
 
 Open this repository in VS Code and press `F5` to launch an Extension Development Host. Theme file changes are reflected in the development window.
 
+Open [`examples/theme-preview/`](examples/theme-preview/README.md) in the Extension Development Host to use as a syntax gallery for manual regression checks.
+
 Validate the manifest and theme colors with:
 
 ```sh

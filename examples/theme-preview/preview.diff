@@ -1,0 +1,22 @@
+diff --git a/harbor.ts b/harbor.ts
+index 1234567..abcdef0 100644
+--- a/harbor.ts
++++ b/harbor.ts
+@@ -1,3 +1,4 @@
+ const name = "Bronze";
+-const depth = 2;
++const depth = 3.5;
++const open = true;
+ console.log(name, depth);
+
+*** old/harbor.txt
+--- new/harbor.txt
+***************
+*** 1,3 ****
+  Harbor: Bronze
+! Depth: 2
+- Closed
+--- 1,3 ----
+  Harbor: Bronze
+! Depth: 3.5
++ Open

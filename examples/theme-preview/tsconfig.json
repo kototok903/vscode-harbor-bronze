@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "strict": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "types": [],
+    "skipLibCheck": true
+  },
+  "include": ["preview.ts", "preview.tsx"]
+}

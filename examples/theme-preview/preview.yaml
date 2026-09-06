@@ -1,0 +1,28 @@
+---
+# Anchors, aliases, tags, block strings, and scalar types.
+defaults: &defaults
+  open: true
+  depth: 3.5
+  capacity: 0x2a
+  missing: null
+
+harbor:
+  name: "Bronze\nHarbor"
+  label: 'Captain''s berth'
+  created: 2026-09-06
+  code: !!str 0012
+  berths:
+    - <<: *defaults
+      name: North
+    - <<: *defaults
+      name: South
+      open: false
+  tags: [cargo, tidal, coastal]
+  coordinates: { latitude: 51.5, longitude: -0.12 }
+  description: |
+    Literal block text.
+    Newlines are preserved.
+  summary: >-
+    Folded text spanning
+    more than one line.
+...

@@ -1,0 +1,17 @@
+{
+  // Compare these keys with fields in preview.ts and preview.js.
+  "name": "Bronze",
+  "open": true,
+  "closed": false,
+  "missing": null,
+  "depth": 3.5,
+  "scientific": 1.25e3,
+  "escaped": "line one\nline two\t\"quoted\"\u2693",
+  "url": "https://example.com/harbor",
+  "berths": [
+    { "id": 1, "name": "North", "tags": ["cargo", "deep"] },
+    { "id": 2, "name": "South", "tags": [] }
+  ],
+  /* JSONC permits comments and trailing commas. */
+  "options": { "retry": 3, "timeout": 1500, },
+}

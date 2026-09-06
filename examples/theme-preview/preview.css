@@ -1,0 +1,36 @@
+/* Compare selectors, property names, values, units, and functions. */
+@layer base, components;
+
+:root {
+  --harbor-teal: #5b91a2;
+  --bronze: rgb(210 163 113 / 85%);
+  --space: 1.25rem;
+}
+
+@layer components {
+  .card[data-status="open"] > h1:first-child {
+    color: var(--harbor-teal);
+    background: linear-gradient(135deg, #071117, #182126);
+    border: 1px solid var(--bronze);
+    padding: calc(var(--space) * 2);
+    width: min(80vw, 42rem);
+    font-family: "Harbor Sans", sans-serif;
+  }
+
+  #harbor a:hover,
+  #harbor a:focus-visible {
+    text-decoration: underline;
+    outline-offset: 3px;
+  }
+
+  .card::before { content: "\2693  Harbor"; }
+}
+
+@media (width <= 640px) {
+  .card { display: grid; grid-template-columns: 1fr; }
+}
+
+@keyframes arrive {
+  from { opacity: 0; transform: translateY(-10%); }
+  to { opacity: 1; transform: translateY(0); }
+}
