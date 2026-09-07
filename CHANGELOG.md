@@ -8,6 +8,10 @@
 - Update Markdown colors.
 - Add missing search highlights, editor links, informational validation, and no-folder status bars colors.
 - Update borderless focus accents.
+- Update symbol icons to corresponding match syntax colors.
+- Make read/write highlights teal.
+- Update bracket pair colors.
+- Unify interface text colors to levels.
 - Fix function color and boldness.
 - Fix modified and invalid-syntax colors in Dark.
 - Fix terminal cursor color in Dark.

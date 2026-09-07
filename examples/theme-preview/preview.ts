@@ -60,3 +60,14 @@ for (const berth of harbor) {
 }
 void describe(harbor);
 void [mask, empty, missing];
+
+function exponentiate() {
+  let count = 0;
+  count = Math.pow(count, 3);
+  count.toExponential(0);
+  console.log(count);
+}
+
+// Bracket colors
+// prettier-ignore
+{{{{{{{{{{{{}}}}}}}}}}}}
