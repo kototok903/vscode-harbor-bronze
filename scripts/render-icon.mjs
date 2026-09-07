@@ -7,10 +7,12 @@ const outputUrl = new URL("../assets/icon.png", import.meta.url);
 const svg = await readFile(sourceUrl);
 const png = new Resvg(svg, {
   background: "rgba(0, 0, 0, 0)",
-  fitTo: { mode: "width", value: 256 }
+  fitTo: { mode: "width", value: 256 },
 })
   .render()
   .asPng();
 
 await writeFile(outputUrl, png);
-console.log("Rendered assets/icon.png at 256×256 with a transparent background.");
+console.log(
+  "Rendered assets/icon.png at 256×256 with a transparent background.",
+);

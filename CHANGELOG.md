@@ -9,7 +9,7 @@
 - Add missing search highlights, editor links, informational validation, and no-folder status bars colors.
 - Update borderless focus accents.
 - Update symbol icons to corresponding match syntax colors.
-- Make read/write highlights teal.
+- Use teal read/write outlines to avoid mixing with bronze search highlights.
 - Update bracket pair colors.
 - Unify interface text colors to levels.
 - Fix function color and boldness.

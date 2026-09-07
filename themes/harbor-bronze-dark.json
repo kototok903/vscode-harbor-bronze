@@ -96,15 +96,18 @@
     "editor.findMatchBackground": "#d2a37144",
     "editor.findMatchHighlightBackground": "#d2a37122",
     "editor.findRangeHighlightBackground": "#d2a37111",
+    "editor.rangeHighlightBackground": "#d2a37111",
     "editorOverviewRuler.findMatchForeground": "#d2a37199",
     "minimap.findMatchHighlight": "#d2a37199",
     "list.filterMatchBackground": "#d2a37122",
     "peekViewEditor.matchHighlightBackground": "#d2a37122",
     "peekViewResult.matchHighlightBackground": "#d2a37122",
-    "editor.wordHighlightBackground": "#5b91a244",
-    "editor.wordHighlightStrongBackground": "#5b91a244",
-    "editor.wordHighlightStrongBorder": "#5b91a280",
-    "editor.wordHighlightTextBackground": "#5b91a218",
+    "editor.wordHighlightBackground": "#ffffff0a",
+    "editor.wordHighlightBorder": "#5b91a277",
+    "editor.wordHighlightStrongBackground": "#ffffff0a",
+    "editor.wordHighlightStrongBorder": "#5b91a2cc",
+    "editor.wordHighlightTextBackground": "#00000000",
+    "editor.wordHighlightTextBorder": "#5b91a244",
     "editorOverviewRuler.wordHighlightForeground": "#5b91a266",
     "editorOverviewRuler.wordHighlightStrongForeground": "#5b91a2aa",
     "editorOverviewRuler.wordHighlightTextForeground": "#5b91a244",
@@ -431,32 +434,32 @@
     {
       "name": "Markdown headings",
       "scope": ["markup.heading", "entity.name.section.markdown"],
-      "settings": {"foreground": "#c2b18f", "fontStyle": "bold"}
+      "settings": { "foreground": "#c2b18f", "fontStyle": "bold" }
     },
     {
       "name": "Markdown link destinations",
       "scope": ["markup.underline.link"],
-      "settings": {"foreground": "#74aabd", "fontStyle": "underline"}
+      "settings": { "foreground": "#74aabd", "fontStyle": "underline" }
     },
     {
       "name": "Markdown link text",
       "scope": ["string.other.link"],
-      "settings": {"foreground": "#74aabd", "fontStyle": ""}
+      "settings": { "foreground": "#74aabd", "fontStyle": "" }
     },
     {
       "name": "Markup bold",
       "scope": ["markup.bold"],
-      "settings": {"foreground": "#abc2ba", "fontStyle": "bold"}
+      "settings": { "foreground": "#abc2ba", "fontStyle": "bold" }
     },
     {
       "name": "Markup italic",
       "scope": ["markup.italic"],
-      "settings": {"foreground": "#abc2ba", "fontStyle": "italic"}
+      "settings": { "foreground": "#abc2ba", "fontStyle": "italic" }
     },
     {
       "name": "Markup bold and italic",
       "scope": ["markup.bold markup.italic", "markup.italic markup.bold"],
-      "settings": {"foreground": "#abc2ba", "fontStyle": "bold italic"}
+      "settings": { "foreground": "#abc2ba", "fontStyle": "bold italic" }
     },
     {
       "name": "Diff inserted",
