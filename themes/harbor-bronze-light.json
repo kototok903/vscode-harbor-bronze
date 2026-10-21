@@ -437,6 +437,11 @@
       "settings": { "foreground": "#796851", "fontStyle": "bold" }
     },
     {
+      "name": "Markdown inline code",
+      "scope": ["markup.inline.raw.string.markdown"],
+      "settings": { "foreground": "#657457" }
+    },
+    {
       "name": "Markdown link destinations",
       "scope": ["markup.underline.link"],
       "settings": { "foreground": "#365f6e", "fontStyle": "underline" }
